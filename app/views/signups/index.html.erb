@@ -1,0 +1,35 @@
+<div id="content">
+  <h1>RubyConf 2013 Lightning Talks</h1>
+
+  <%= content_tag :div, flash[:notice], :class => 'notice' if flash[:notice] %>
+  <%= content_tag :div, flash[:error],  :class => 'error'  if flash[:error] %>
+
+  <p>
+    IMPORTANT: The duration of your talk <em>includes</em> setup time -- if you pick a 1 minute slot, you
+    shouldn't count on showing any slides.
+  </p>
+
+  <ol>
+    <% @signups.each do |signup| %>
+      <li>
+        <%= signup.name %> -
+        <i><%= signup.title %></i>
+      </li>
+    <% end %>
+
+    <li>
+      <%= form_for Signup.new do |f| %>
+        <%= f.label :name, 'Your Name' %>
+        <%= f.text_field :name %>
+
+        <%= f.label :title, 'Topic or Title' %>
+        <%= f.text_field :title %>
+
+        <%= f.label :duration %>
+        <%= f.select :duration, [['5 min', 5], ['1 min', 1]] %>
+
+        <button type="submit">Sign up!</button>
+      <% end %>
+    </li>
+  </ol>
+</div>

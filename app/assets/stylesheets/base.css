@@ -1,0 +1,47 @@
+body {
+  font-family: "american typewriter", "courier new", monospace;
+}
+#content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+li {
+  margin: 1em 0;
+  position: relative;
+}
+
+input {
+  border: 1px dashed #666666;
+  border-width: 0 0 1px 0;
+  margin-right: 10px;
+}
+input#signup_name {
+  width: 300px;
+}
+input#signup_title {
+  width: 450px;
+}
+label {
+  color: #999999;
+  font-size: 12px;
+  position: absolute;
+  top: 2em;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+
+div.notice {
+  background-color: #ffee99;
+  border: 1px solid #ffcc99;
+  color: #ff6600;
+  padding: 5px 10px;
+}
+div.error {
+  background-color: #ffeeee;
+  border: 1px solid #ffcccc;
+  color: #cc3300;
+  padding: 5px 10px;
+}
