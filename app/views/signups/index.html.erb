@@ -1,5 +1,5 @@
 <div id="content">
-  <h1>RailsConf 2013 Lightning Talks</h1>
+  <h1>SpreeConf 2013 Lightning Talks</h1>
 
   <%= content_tag :div, flash[:notice], :class => 'notice' if flash[:notice] %>
   <%= content_tag :div, flash[:error],  :class => 'error'  if flash[:error] %>
@@ -27,10 +27,11 @@
         <%= f.text_field :title %>
 
         <%= f.label :duration %>
-        <%= f.select :duration, [['5 min', 5], ['1 min', 1]] %>
+        <%= f.hidden_field :duration, :value => 5 %>
 
         <button type="submit">Sign up!</button>
       <% end %>
     </li>
   </ol>
+  <a href="https://github.com/rubycentral/lightning-talks">This app is Open Source!</a>
 </div>
