@@ -20,7 +20,10 @@
       <%= form_for Signup.new do |f| %>
         <%= f.label :name, 'Your Name' %>
         <%= f.text_field :name %>
-
+        <%= f.label :email, 'Email (hidden)' %>
+        <%= f.text_field :email %>
+        <%= f.label :twitter, 'Twitter Handle' %>
+        <%= f.text_field :twitter %>
         <%= f.label :title, 'Topic or Title' %>
         <%= f.text_field :title %>
         <%= f.hidden_field :duration, :value => 5 %>

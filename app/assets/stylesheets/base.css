@@ -17,11 +17,18 @@ input {
   margin-right: 10px;
 }
 input#signup_name {
-  width: 300px;
+  width: 150px;
 }
 input#signup_title {
-  width: 450px;
+  width: 300px;
 }
+input#signup_email {
+  width: 150px;
+}
+input#signup_twitter {
+  width: 150px;
+}
+
 label {
   color: #999999;
   font-size: 12px;
