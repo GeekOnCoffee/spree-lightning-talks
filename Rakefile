@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Lightning2013::Application.load_tasks
+LightningTalkCollector::Application.load_tasks
